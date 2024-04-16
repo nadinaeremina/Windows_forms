@@ -12,57 +12,39 @@ namespace Forms
 {
     public partial class Child : Form
     {
-        //public Child()
-        //{
-        //    InitializeComponent();
-        //}
+        // var 0
+        public Child()
+        {
+            InitializeComponent();
+        }
 
-        // передача данных от родителя к дочерней
-        // все три действия происходят только при создании формы
+        // подходит всем вариантам
+        private void bt_close_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
 
-        // 1
+        //var1 // передача данных от родителя к дочерней // через кон-р дочерней формы
         //public Child(string str1)
         //{
         //    InitializeComponent();
-        //    label1.Text = str1;
+        //    textBox1.Text = str1;
         //}
 
-        //private void bt_close_Click(object sender, EventArgs e)
+        //var2 // через доп.ф-цию и св-во дочерней формы
+        //public string My_text
         //{
-        //    Close();
-        //}
-
-        // 2
-        //public string My_text 
-        //{ 
         //    set
         //    {
-        //        label1.Text = value;
+        //        textBox1.Text = value;
         //    }
         //}
-        //public Child()
-        //{
-        //    InitializeComponent();
-        //}
 
-        //private void bt_close_Click(object sender, EventArgs e)
-        //{
-        //    Close();
-        //}
-
-        // 3
-        //public Child()
-        //{
-        //    InitializeComponent();
-        //}
-        //private void bt_close_Click(object sender, EventArgs e)
-        //{
-        //    Close();
-        //}
-        //public DialogResult ShowDialog(string s) // перегружаем метод 'ShowDialog'
-        //{
-        //    label1.Text = s;
-        //    return ShowDialog();
-        //}
+        //var3 // через перегрузку ф-ции 'ShowDialog'       
+        public DialogResult ShowDialog(string s)
+        {
+            textBox1.Text = s;
+            return ShowDialog();
+        }
     }
 }

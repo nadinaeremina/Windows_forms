@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C4574753-4AB4-456F-A2E1-47E1135FAEF5}</ProjectGuid>
+    <ProjectGuid>{D21FEC7C-06A4-4490-A28A-3AC31903053D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Forms</RootNamespace>
-    <AssemblyName>Forms</AssemblyName>
+    <RootNamespace>Tasks_menu</RootNamespace>
+    <AssemblyName>Tasks_menu</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,25 +46,79 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Child.cs">
+    <Compile Include="Add.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Child.Designer.cs">
-      <DependentUpon>Child.cs</DependentUpon>
+    <Compile Include="Add.Designer.cs">
+      <DependentUpon>Add.cs</DependentUpon>
     </Compile>
-    <Compile Include="Parent.cs">
+    <Compile Include="Ancetacs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Parent.Designer.cs">
-      <DependentUpon>Parent.cs</DependentUpon>
+    <Compile Include="Ancetacs.Designer.cs">
+      <DependentUpon>Ancetacs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mouse.Designer.cs">
+      <DependentUpon>Mouse.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Child.resx">
-      <DependentUpon>Child.cs</DependentUpon>
+    <Compile Include="Task1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Task1.Designer.cs">
+      <DependentUpon>Task1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Task2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Task2.Designer.cs">
+      <DependentUpon>Task2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Task3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Task3.Designer.cs">
+      <DependentUpon>Task3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Task4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Task4.Designer.cs">
+      <DependentUpon>Task4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Timer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Timer.Designer.cs">
+      <DependentUpon>Timer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tovars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tovars.Designer.cs">
+      <DependentUpon>Tovars.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add.resx">
+      <DependentUpon>Add.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Parent.resx">
-      <DependentUpon>Parent.cs</DependentUpon>
+    <EmbeddedResource Include="Ancetacs.resx">
+      <DependentUpon>Ancetacs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mouse.resx">
+      <DependentUpon>Mouse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -75,6 +129,24 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Task1.resx">
+      <DependentUpon>Task1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Task2.resx">
+      <DependentUpon>Task2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Task3.resx">
+      <DependentUpon>Task3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Task4.resx">
+      <DependentUpon>Task4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Timer.resx">
+      <DependentUpon>Timer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tovars.resx">
+      <DependentUpon>Tovars.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

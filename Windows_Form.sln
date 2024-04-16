@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tovars", "Tovars\Tovars.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Menu", "Menu\Menu.csproj", "{2361FB13-BDA8-4AD1-9036-7D84D4AE0B2A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tovars_dz", "Tovars_dz\Tovars_dz.csproj", "{6F9846D9-8100-4597-B7C9-0877CAE99E92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tasks_menu", "Tasks_menu\Tasks_menu.csproj", "{D21FEC7C-06A4-4490-A28A-3AC31903053D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,14 @@ Global
 		{2361FB13-BDA8-4AD1-9036-7D84D4AE0B2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2361FB13-BDA8-4AD1-9036-7D84D4AE0B2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2361FB13-BDA8-4AD1-9036-7D84D4AE0B2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F9846D9-8100-4597-B7C9-0877CAE99E92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F9846D9-8100-4597-B7C9-0877CAE99E92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F9846D9-8100-4597-B7C9-0877CAE99E92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F9846D9-8100-4597-B7C9-0877CAE99E92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D21FEC7C-06A4-4490-A28A-3AC31903053D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D21FEC7C-06A4-4490-A28A-3AC31903053D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D21FEC7C-06A4-4490-A28A-3AC31903053D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D21FEC7C-06A4-4490-A28A-3AC31903053D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

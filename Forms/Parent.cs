@@ -26,7 +26,7 @@ namespace Forms
 
         // закрываем формы явно с помощью метода 'Close'
 
-
+        // 0 // ничего не передаем на дочернюю форму, просто открываем ее
         //private void button1_Click(object sender, EventArgs e)
         //{
         //    Child f2 = new Child();
@@ -59,10 +59,10 @@ namespace Forms
         //}
 
         // 3 // через перегрузку ф-ции 'ShowDialog'
-        //private void button1_Click(object sender, EventArgs e)
-        //{
-        //    Child f_child = new Child();
-        //    f_child.ShowDialog(tb_parent.Text);
-        //}
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Child f_child = new Child();
+            f_child.ShowDialog(tb_parent.Text);
+        }
     }
 }

@@ -10,21 +10,21 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Serialization;
 
-namespace WindowsFormsApp4
+namespace Tasks_menu
 {
-    public partial class Form1 : Form
+    public partial class Ancetacs : Form
     {
         string[] russia = { "Екатеринбург", "Москва", "Санкт-Петербург" };
         string[] america = { "Вашингтон", "Нью-Йорк", "Лос-Анджелес" };
         string[] spain = { "Мадрид", "Барселона", "Валенсия" };
-        public Form1()
+        public Ancetacs()
         {
             InitializeComponent();
             Birthday.MaxDate = new DateTime(DateTime.Now.Year - 18, 1, 1);
             Birthday.MinDate = new DateTime(DateTime.Now.Year - 70, 1, 1);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
             if (LastName.Text.Length > 0 && FirstName.Text.Length > 0 && city.Items.Count > 0 && phone.MaskCompleted == true && (Man.Checked == true || Woman.Checked == true) && Birthday.Value != new DateTime(DateTime.Now.Year - 18, 1, 1))
             {
@@ -38,10 +38,12 @@ namespace WindowsFormsApp4
                 else if (Woman.Checked == true) str_person += $"Пол: женский";
                 MessageBox.Show(str_person, "Анкетные данные");
 
-                XmlSerializer xs = new XmlSerializer(typeof(string)); 
+                XmlSerializer xs = new XmlSerializer(typeof(string)); // передавая обьект - указываем его тип
+
+                // сериализация
                 using (Stream fs = File.Create("anketa.xml"))
                 {
-                    xs.Serialize(fs,str_person); 
+                    xs.Serialize(fs, str_person);
                     Console.WriteLine(str_person);
                 }
             }
@@ -53,7 +55,7 @@ namespace WindowsFormsApp4
             }
         }
 
-        private void country_SelectedIndexChanged(object sender, EventArgs e)
+        private void country_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             if (city.Items.Count > 0)
                 city.Items.Clear();
@@ -65,26 +67,26 @@ namespace WindowsFormsApp4
                 city.Items.AddRange(spain);
         }
 
-        private void LastName_MouseDown(object sender, MouseEventArgs e)
+        private void LastName_MouseDown_1(object sender, MouseEventArgs e)
         {
             LastName.BackColor = Color.White;
         }
 
-        private void FirstName_MouseDown(object sender, MouseEventArgs e)
+        private void FirstName_MouseDown_1(object sender, MouseEventArgs e)
         {
             FirstName.BackColor = Color.White;
         }
 
-        private void LastName_MouseLeave(object sender, EventArgs e)
-        {
-            if (LastName.Text.Length == 0)
-                LastName.BackColor = Color.LightSteelBlue;
-        }
-
-        private void FirstName_MouseLeave(object sender, EventArgs e)
+        private void FirstName_MouseLeave_1(object sender, EventArgs e)
         {
             if (FirstName.Text.Length == 0)
                 FirstName.BackColor = Color.LightSteelBlue;
+        }
+
+        private void LastName_MouseLeave_1(object sender, EventArgs e)
+        {
+            if (LastName.Text.Length == 0)
+                LastName.BackColor = Color.LightSteelBlue;
         }
     }
 }
