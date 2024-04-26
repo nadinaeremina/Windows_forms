@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paint", "Paint\Paint.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animation", "Animation\Animation.csproj", "{2696499C-6546-4B29-9F67-034F1D77DD6D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plane", "Plane\Plane.csproj", "{7390C62B-3A21-4349-BC0E-B91A5D824C3B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{2696499C-6546-4B29-9F67-034F1D77DD6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2696499C-6546-4B29-9F67-034F1D77DD6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2696499C-6546-4B29-9F67-034F1D77DD6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7390C62B-3A21-4349-BC0E-B91A5D824C3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7390C62B-3A21-4349-BC0E-B91A5D824C3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7390C62B-3A21-4349-BC0E-B91A5D824C3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7390C62B-3A21-4349-BC0E-B91A5D824C3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
